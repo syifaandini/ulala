@@ -5,6 +5,7 @@ html, body{
 body{
   background-color: #f6f6f6;
   margin: 0;
+  font-family: 'Nunito', sans-serif;
 }
 
 h1{
@@ -12,6 +13,7 @@ h1{
   margin: auto;
   text-align: center;
   font-size: 3rem;
+  font-weight: bold;
 }
 
 
@@ -83,22 +85,6 @@ p{
 
 }
 
-/* Hp */
-@media (min-device-width: 300px) and (max-device-width:1100px){
-  h1{
-    /* font-size: 6rem; */
-  }
-
-  .test{
-    margin: 0;
-  }
-
-
-  .btn{
-    /* background-color: red;  */
-  }
-
-}
 
 /* Floating Label */
 .bd-placeholder-img {
@@ -127,6 +113,8 @@ p{
   height: 3.125rem;
   padding: .75rem;
 }
+
+
 
 .form-label-group>label {
   position: absolute;
@@ -208,5 +196,19 @@ p{
   .form-label-group input:-ms-input-placeholder,
   .form-label-group textarea:-ms-input-placeholder {
     color: #777;
+  }
+}
+
+/* Hp */
+@media (min-device-width: 300px) and (max-device-width:1100px){
+  h1{
+    /* font-size: 6rem; */
+  }
+  .test{
+    margin: 0;
+  }
+  .form-label-group>textarea{
+    height: 5rem;
+    padding: .75rem;
   }
 }
