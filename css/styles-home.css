@@ -1,0 +1,223 @@
+html, body{
+ height: 100%;
+}
+
+body{
+  background-color: #f6f6f6;
+  margin: 0;
+}
+
+h1{
+  padding-bottom: 10%;
+  margin: auto;
+  text-align: center;
+  font-size: 4rem;
+}
+
+
+.btn{
+  width: 20%;
+  border-radius: 20px;
+}
+
+
+.test {
+  margin: auto;
+}
+
+form{
+  width: 80%;
+  margin: auto;
+}
+
+.form-rounded{
+  border-radius: 2rem;
+}
+
+.btn-kirim {
+  width: 100%;
+  background-color: #264A99;
+  border: none;
+  border-radius: 1rem;
+}
+
+p{
+  font-size: 0.75rem;
+}
+
+.row{
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.video-wrapper {
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: auto; */
+}
+
+.video-wrapper iframe {
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 60%;
+}
+
+.isiForm{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+/* Media */
+
+@media (min-device-width: 1000px) and (min-device-height: 1300px){
+  .carousel-item img{
+    /* width: 100%; */
+  }
+}
+
+/* Desktop, ipad pro landscape */
+@media (min-device-width: 900px) and (min-device-height: 600px) and (max-device-height: 1100px) {
+  #homeCarousel{
+    display: flex;
+    /* height: 100%; */
+  }
+}
+
+/* Hp */
+@media (min-device-width: 300px) and (max-device-width:1100px){
+  h1{
+    margin: 0;
+    padding-bottom: 2%;
+    text-align: center;
+  }
+  .carousel-item img{
+    /* width: 80%; */
+  }
+
+  .paket{
+    align-items: center;
+    justify-content: center;
+  }
+
+  .opening{
+    margin: 0;
+    text-align: center;
+  }
+}
+
+/* Floating Label */
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.form-label-group {
+  position: relative;
+  /* margin-bottom: 1rem; */
+}
+
+.form-label-group>input,
+.form-label-group>textarea,
+.form-label-group>label {
+  height: 3.125rem;
+  padding: .75rem;
+}
+
+.form-label-group>label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  margin-bottom: 0;
+  /* Override default `<label>` margin */
+  line-height: 1.5;
+  color: #495057;
+  pointer-events: none;
+  cursor: text;
+  /* Match the input under the label */
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  transition: all .1s ease-in-out;
+}
+
+.form-label-group input::-webkit-input-placeholder,
+.form-label-group textarea::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input:-ms-input-placeholder,
+.form-label-group textarea:-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::-ms-input-placeholder,
+.form-label-group textarea::-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::-moz-placeholder,
+.form-label-group textarea::-moz-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::placeholder,
+.form-label-group textarea::placeholder {
+  color: transparent;
+}
+
+.form-label-group input:not(:placeholder-shown),
+.form-label-group textarea:not(:placeholder-shown) {
+  padding-top: 1.25rem;
+  padding-bottom: .25rem;
+}
+
+.form-label-group input:not(:placeholder-shown)~label,
+.form-label-group textarea:not(:placeholder-shown)~label {
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+  font-size: 12px;
+  color: #777;
+}
+
+/* Fallback for Edge
+      -------------------------------------------------- */
+@supports (-ms-ime-align: auto) {
+  .form-label-group>label {
+    display: none;
+  }
+
+  .form-label-group input::-ms-input-placeholder,
+  .form-label-group textarea::-ms-input-placeholder {
+    color: #777;
+  }
+}
+
+/* Fallback for IE
+      -------------------------------------------------- */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .form-label-group>label {
+    display: none;
+  }
+
+  .form-label-group input:-ms-input-placeholder,
+  .form-label-group textarea:-ms-input-placeholder {
+    color: #777;
+  }
+}
