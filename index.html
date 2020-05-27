@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <!-- <meta charset="utf-8"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HMMM</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- CSS Stylesheet  -->
-    <link rel="stylesheet" href="css/styles-home.css">
+    <link rel="stylesheet" href="css/styles.css">
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
@@ -28,14 +29,13 @@
             <div class="form-label-group">
               <input id="inputNama" type="text" name="orang" class="form-control form-rounded" placeholder="Your Name" autofocus>
               <label for="inputNama">Nama</label><br>
-              <!-- <small id="" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
             </div>
             <div class="form-label-group">
-                <textarea id="kalimat" class="form-control form-rounded" name="kalimat" rows="4" cols="40" placeholder="Say Hello!" ondrop="return false;"></textarea>
+                <textarea id="kalimat" class="form-control form-rounded" name="kalimat" rows="4" cols="40" placeholder="Kalimat" ondrop="return false;"></textarea>
               <label for="kalimat">Kalimat</label>
               <p class="float-right">Remaining: <span class="remaining"></span></p>
             </div>
-            <button type="submit" class="btn btn-primary btn-kirim">Send</button>
+            <button id="kirimKalimat" type="submit" class="btn btn-primary btn-kirim">Send</button>
           </form>
         <!-- </div> -->
 

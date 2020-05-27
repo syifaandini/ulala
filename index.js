@@ -1,22 +1,3 @@
-
-
-// $('.test').css({
-//   display: 'none',
-// });
-
-//Show yuhu
-$('.btn-trigger').click(function(){
-  // $('.test').css({
-  //   display: 'show',
-  // });
-  // $('.paket').css({
-  //   display: 'none',
-  // });
-  // $('.paket').hide();
-  // $('.test').show();
-
-});
-
 //Character limit
 $(function(){
   var maxLength = 50;
