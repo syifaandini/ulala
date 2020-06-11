@@ -48,6 +48,7 @@ var $form = $('form#test-form'),
 
 
 $('#kirimKalimat').on('click', function(e) {
+  alert("lala");
   e.preventDefault();
   var jqxhr = $.ajax({
     url: url,
