@@ -35,15 +35,15 @@ $("#pesan").on("keydown", function(e){
 });
 
 //Get Name
-$("form").submit(function(event){
-  var namaOrang = $("input").val();
-  var ucapan = $("textarea").val();
+// $("form").submit(function(event){
+  // var namaOrang = $("input").val();
+  // var ucapan = $("textarea").val();
   // alert(namaOrang + "; " + ucapan);
-});
+// });
 
 // Submit ke Gsheet
 
-var $form = $('#test-form'),
+var $form = $('form#test-form'),
     url = 'https://script.google.com/macros/s/AKfycby6rX4Bq80WkRk7DU1Bc6LGr_9StpYmSxYp_E-wxh5Xw3xqRlI/exec'
 
 
