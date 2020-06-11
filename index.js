@@ -2,10 +2,10 @@
 $(function(){
   var maxLength = 50;
   $(".remaining").text(maxLength);
-  $("#kalimat").keydown(function(event){
+  $("#pesan").keydown(function(event){
     LimitCharacters($(this));
   });
-  $("#kalimat").keyup(function(event){
+  $("#pesan").keyup(function(event){
     LimitCharacters($(this));
   });
 
@@ -20,13 +20,13 @@ $(function(){
 });
 
 //Enter-key pressed
-$("#inputNama").on("keydown", function(e){
+$("#nama").on("keydown", function(e){
   if(e.which === 13){
     return false;
   }
 });
 
-$("#kalimat").on("keydown", function(e){
+$("#pesan").on("keydown", function(e){
   if(e.which === 13){
     $("#kirimKalimat").click();
     return false;
