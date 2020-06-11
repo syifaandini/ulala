@@ -35,11 +35,11 @@ $(function(){
 // });
 
 //Get Name
-// $("form").submit(function(event){
-  // var namaOrang = $("input").val();
-  // var ucapan = $("textarea").val();
+$("form").submit(function(event){
+  var namaOrang = $("input").val();
+  var ucapan = $("textarea").val();
   // alert(namaOrang + "; " + ucapan);
-// });
+});
 
 // Submit ke Gsheet
 
@@ -66,18 +66,21 @@ $('#test-form').submit(function(e){
 })
 
 function formSubmit(){
-  var $form = $('#test-form'),
-      url = 'https://script.google.com/macros/s/AKfycby6rX4Bq80WkRk7DU1Bc6LGr_9StpYmSxYp_E-wxh5Xw3xqRlI/exec'
+  var namaOrang = $("input").val();
+  var pesanOrang = $("textarea").val();
+  var $form = $('#test-form');
+  var url = 'https://script.google.com/macros/s/AKfycbzmujn9ot-JjJ_O_LjkfmMvsDpLyxEYwzgXXmN2blDTl1e0Nkg/exec';
 
   $.ajax({
-    url: url,
+    crossDomain: true,
+    url: url + "?nama=" + namaOrang + "&pesan=" + pesanOrang,
     method: "GET",
     dataType: "json",
     data: $form.serialize(),
     success: function(response){
       $('#test-form')[0].reset();
-      alert("yehey");
-      return true
+      // alert(url + "?nama=" + namaOrang + "&pesan=" + pesanOrang);
+      // return true
     }
   });
 
@@ -85,4 +88,5 @@ function formSubmit(){
 
 
 // https://script.google.com/macros/s/AKfycbzmujn9ot-JjJ_O_LjkfmMvsDpLyxEYwzgXXmN2blDTl1e0Nkg/exec?nama=rama&pesan=woi
+// https://script.google.com/macros/s/AKfycby6rX4Bq80WkRk7DU1Bc6LGr_9StpYmSxYp_E-wxh5Xw3xqRlI/exec?nama=andin&pesan=hey
 // https://script.google.com/macros/s/AKfycby6rX4Bq80WkRk7DU1Bc6LGr_9StpYmSxYp_E-wxh5Xw3xqRlI/exec
