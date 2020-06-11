@@ -48,6 +48,7 @@ var $form = $('form#test-form'),
 
 
 $('#kirimKalimat').submit(function(e) {
+  alert("yey");
   e.preventDefault();
   var jqxhr = $.ajax({
     url: url,
@@ -55,7 +56,7 @@ $('#kirimKalimat').submit(function(e) {
     dataType: "json",
     data: $form.serializeObject()
   }).success(
-    alert("yey");
+    alert("yey2");
   );
 })
 
