@@ -44,7 +44,7 @@ $(function(){
 // Submit ke Gsheet
 
 var $form = $('form#test-form'),
-    url = 'https://script.google.com/macros/s/AKfycby6rX4Bq80WkRk7DU1Bc6LGr_9StpYmSxYp_E-wxh5Xw3xqRlI/exec'
+    url = 'https://script.google.com/macros/s/AKfycbzmujn9ot-JjJ_O_LjkfmMvsDpLyxEYwzgXXmN2blDTl1e0Nkg/exec'
 
 
 $('#kirimKalimat').on('click', function(e) {
@@ -60,3 +60,4 @@ $('#kirimKalimat').on('click', function(e) {
 })
 
 // https://script.google.com/macros/s/AKfycbzmujn9ot-JjJ_O_LjkfmMvsDpLyxEYwzgXXmN2blDTl1e0Nkg/exec?nama=rama&pesan=woi
+// https://script.google.com/macros/s/AKfycby6rX4Bq80WkRk7DU1Bc6LGr_9StpYmSxYp_E-wxh5Xw3xqRlI/exec
