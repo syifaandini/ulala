@@ -20,19 +20,19 @@ $(function(){
 });
 
 //Enter-key pressed
-$("#nama").on("keydown", function(e){
-  if(e.which === 13){
-    return false;
-  }
-});
+// $("#nama").on("keydown", function(e){
+//   if(e.which === 13){
+//     return false;
+//   }
+// });
 
-$("#pesan").on("keydown", function(e){
-  if(e.which === 13){
-    $("#kirimKalimat").click();
-    return false;
-  }
-
-});
+// $("#pesan").on("keydown", function(e){
+//   if(e.which === 13){
+//     $("#kirimKalimat").click();
+//     return false;
+//   }
+//
+// });
 
 //Get Name
 // $("form").submit(function(event){
@@ -47,8 +47,7 @@ var $form = $('form#test-form'),
     url = 'https://script.google.com/macros/s/AKfycby6rX4Bq80WkRk7DU1Bc6LGr_9StpYmSxYp_E-wxh5Xw3xqRlI/exec'
 
 
-$('#kirimKalimat').submit(function(e) {
-  alert("yey");
+$('#kirimKalimat').on('click', function(e) {
   e.preventDefault();
   var jqxhr = $.ajax({
     url: url,
