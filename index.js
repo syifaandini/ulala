@@ -46,7 +46,7 @@ $("form").submit(function(event){
 var $form = $('form#test-form'),
     url = 'https://script.google.com/macros/s/AKfycbzmujn9ot-JjJ_O_LjkfmMvsDpLyxEYwzgXXmN2blDTl1e0Nkg/exec'
 
-$('#submit-form').on('click', function(e) {
+$('#kirimKalimat').on('click', function(e) {
   e.preventDefault();
   var jqxhr = $.ajax({
     url: url,
