@@ -34,35 +34,12 @@ $(function(){
 //
 // });
 
-//Get Name
-$("form").submit(function(event){
-  var namaOrang = $("input").val();
-  var ucapan = $("textarea").val();
-  // alert(namaOrang + "; " + ucapan);
-});
-
 // Submit ke Gsheet
-
-// var $form = $('form#test-form'),
-//     url = 'https://script.google.com/macros/s/AKfycbzmujn9ot-JjJ_O_LjkfmMvsDpLyxEYwzgXXmN2blDTl1e0Nkg/exec'
-//
-//
-// $('#kirimKalimat').on('click', function(e) {
-//   alert("lala");
-//   e.preventDefault();
-//   var jqxhr = $.ajax({
-//     url: url,
-//     method: "GET",
-//     dataType: "json",
-//     data: $form.serializeObject()
-//   }).success(
-//     alert("yey2");
-//   );
-// })
-
 $('#test-form').submit(function(e){
   e.preventDefault();
   formSubmit();
+  $('#test-form').hide();
+  $('#link-stream').show();
 })
 
 function formSubmit(){
@@ -85,8 +62,3 @@ function formSubmit(){
   });
 
 }
-
-
-// https://script.google.com/macros/s/AKfycbzmujn9ot-JjJ_O_LjkfmMvsDpLyxEYwzgXXmN2blDTl1e0Nkg/exec?nama=rama&pesan=woi
-// https://script.google.com/macros/s/AKfycby6rX4Bq80WkRk7DU1Bc6LGr_9StpYmSxYp_E-wxh5Xw3xqRlI/exec?nama=andin&pesan=hey
-// https://script.google.com/macros/s/AKfycby6rX4Bq80WkRk7DU1Bc6LGr_9StpYmSxYp_E-wxh5Xw3xqRlI/exec

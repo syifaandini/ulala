@@ -1,28 +1,47 @@
-html, body{
- height: 100%;
-}
-
-body{
-  background-color: #000;
-  margin: 0;
-  font-family: 'Nunito', sans-serif;
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  min-width: 100%;
+  min-height: 100%;
 }
 
 h1{
-  padding-bottom: 10%;
-  margin: auto;
   text-align: center;
   font-size: 3rem;
   font-weight: bold;
+}
+
+a{
   color: #fff;
 }
 
-.test {
-  margin: auto;
+a:hover{
+  text-decoration: none;
+  color: #fff;
+}
+
+#link-stream{
+  display: none;
+  position: fixed;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+}
+
+.test{
+  position: fixed;
+  left: 45%;
+  bottom: -50px;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
 }
 
 form{
-  width: 80%;
+  width: 140%;
   margin: auto;
 }
 
@@ -38,69 +57,13 @@ form{
   padding-top: 12px;
   padding-bottom: 12px;
 }
-
 p{
   font-size: 0.75rem;
 }
 
-.row{
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.video-wrapper {
-  /* position: relative; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* margin: auto; */
-}
-
-.video-wrapper iframe {
-  /* position: absolute; */
-  top: 0;
-  left: 0;
-  width: 80%;
-  height: 60%;
-}
-
-.isiForm{
-  /* align-items: center; */
-  /* justify-content: center; */
-  /* display: flex; */
-}
-
-/* Media */
-/* @media (min-device-width: 1000px) and (min-device-height: 1300px){ */
-
-/* } */
-
-/* Desktop, ipad pro landscape */
-/* @media (min-device-width: 900px) and (min-device-height: 600px) and (max-device-height: 1100px) {
-
-} */
-
-
-/* Floating Label */
-.bd-placeholder-img {
-  font-size: 1.125rem;
-  text-anchor: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-@media (min-width: 768px) {
-  .bd-placeholder-img-lg {
-    font-size: 3.5rem;
-  }
-}
 
 .form-label-group {
   position: relative;
-  /* margin-bottom: 1rem; */
 }
 
 .form-label-group>input,
@@ -155,82 +118,20 @@ p{
   color: transparent;
 }
 
-.form-label-group input:not(:placeholder-shown),
-.form-label-group textarea:not(:placeholder-shown) {
-  padding-top: 1.25rem;
-  padding-bottom: .25rem;
-}
-
 .form-label-group input:not(:placeholder-shown)~label,
 .form-label-group textarea:not(:placeholder-shown)~label {
-  padding-top: .25rem;
-  padding-bottom: .25rem;
-  font-size: 12px;
   color: #777;
+  display: none;
 }
+/* Add some content at the bottom of the video/page */
 
-/* Fallback for Edge
-      -------------------------------------------------- */
-@supports (-ms-ime-align: auto) {
-  .form-label-group>label {
-    display: none;
-  }
-
-  .form-label-group input::-ms-input-placeholder,
-  .form-label-group textarea::-ms-input-placeholder {
-    color: #777;
-  }
-}
-
-/* Fallback for IE
-      -------------------------------------------------- */
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .form-label-group>label {
-    display: none;
-  }
-
-  .form-label-group input:-ms-input-placeholder,
-  .form-label-group textarea:-ms-input-placeholder {
-    color: #777;
-  }
-}
 
 /* Hp */
-@media (min-device-width: 300px) and (max-device-width:1100px) and (min-device-height:400px) and (max-device-height:1400px){
-  h1{
-    font-size: 2rem;
-  }
-  .test{
-    /* margin: 0; */
-  }
+@media (min-device-width: 300px) and (max-device-width:600px){
   .form-label-group>textarea{
     height: 5rem;
-    /* padding: .75rem; */
   }
-
-  .video-wrapper iframe {
-    /* position: absolute; */
-    top: 0;
-    left: 0;
-    width: 90%;
-    height: 80%;
+  .test{
+    left: 38%;
   }
-}
-
-/* Desktop, ipad pro landscape */
-@media (min-device-width: 900px) and (min-device-height: 600px) and (max-device-height: 1100px) {
-  .form-label-group>textarea{
-    /* height: 6rem; */
-    /* padding: .75rem; */
-  }
-
-  .video-wrapper iframe {
-    /* position: absolute; */
-    top: 0;
-    left: 0;
-    margin-left: 5%;
-    width: 100%;
-    height: 40%;
-  }
-
 }
