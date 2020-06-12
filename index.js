@@ -39,7 +39,7 @@ $('#test-form').submit(function(e){
   e.preventDefault();
   formSubmit();
   $('#test-form').hide();
-  $('#link-stream').show();
+  $('.link-stream').show();
 })
 
 function formSubmit(){
