@@ -13,11 +13,10 @@ body{
 }
 
 h2{
-
+  font-size: 2.5vw;
   font-weight: bold;
   color: #fff;
-  /* width: 100%; */
-  /* padding-bottom: 2%; */
+
 }
 
 h3{
@@ -47,14 +46,14 @@ a:hover{
   text-align: center;
   position: fixed;
   left: 50%;
-  bottom: 200px;
+  bottom: 40%;
   transform: translate(-50%, -50%);
   margin: 0 auto;
 }
 
 .test{
   position: fixed;
-  left: 44%;
+  left: 43.5%;
   bottom: -50px;
   transform: translate(-50%, -50%);
   margin: 0 auto;
@@ -148,20 +147,64 @@ p{
 /* Add some content at the bottom of the video/page */
 
 
-/* Hp */
-@media (min-device-width: 300px) and (max-device-width:600px){
+/* Media */
+@media (min-device-width: 300px) and (max-device-width:400px){
   .form-label-group>textarea{
     height: 5rem;
   }
   .title{
-    bottom: 260px;
-    width: 95%;
+    bottom: 55%;
+    width: 90%;
   }
   h2{
-    font-size: 1.5rem;
+    font-size: 3.5vw;
   }
   .test{
     left: 38%;
+  }
+  .link-stream{
+    bottom: 35%;
+  }
+}
+
+@media (max-device-width: 350px){
+  .title{
+    bottom: 62%;
+  }
+}
+
+@media (min-device-width: 375px) and (max-device-width: 500px) and (min-device-height:600px) {
+  .form-label-group>textarea{
+    height: 5rem;
+  }
+  .title{
+    bottom: 45%;
+    width: 90%;
+  }
+  h2{
+    font-size: 3.5vw;
+  }
+  .test{
+    left: 38%;
+  }
+  .link-stream{
+    bottom: 35%;
+  }
+}
+
+@media (min-device-width: 700px) and (max-device-width:1100px){
+  .form-label-group>textarea{
+    height: 5rem;
+  }
+  .title{
+    bottom: 28%;
+    width: 90%;
+  }
+  h2{
+    font-size: 3.5vw;
+  }
+  .test{
+    left: 42%;
   }
   .link-stream{
     bottom: 35%;

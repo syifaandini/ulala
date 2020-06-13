@@ -37,7 +37,7 @@ $(function(){
 // Submit ke Gsheet
 $('#test-form').submit(function(e){
   e.preventDefault();
-  formSubmit();
+  // formSubmit();
   $('#test-form').hide();
   $('.title').hide();
   $('.link-stream').show();
