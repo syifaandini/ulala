@@ -13,10 +13,11 @@ body{
 }
 
 h2{
-  text-align: center;
+
   font-weight: bold;
   color: #fff;
-  padding-bottom: 2%;
+  /* width: 100%; */
+  /* padding-bottom: 2%; */
 }
 
 h3{
@@ -37,14 +38,23 @@ a:hover{
   display: none;
   position: fixed;
   left: 50%;
-  bottom: 35%;
+  bottom: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+}
+
+.title{
+  text-align: center;
+  position: fixed;
+  left: 50%;
+  bottom: 200px;
   transform: translate(-50%, -50%);
   margin: 0 auto;
 }
 
 .test{
   position: fixed;
-  left: 45%;
+  left: 44%;
   bottom: -50px;
   transform: translate(-50%, -50%);
   margin: 0 auto;
@@ -143,7 +153,17 @@ p{
   .form-label-group>textarea{
     height: 5rem;
   }
+  .title{
+    bottom: 260px;
+    width: 95%;
+  }
+  h2{
+    font-size: 1.5rem;
+  }
   .test{
     left: 38%;
+  }
+  .link-stream{
+    bottom: 35%;
   }
 }

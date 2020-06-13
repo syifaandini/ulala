@@ -39,6 +39,7 @@ $('#test-form').submit(function(e){
   e.preventDefault();
   formSubmit();
   $('#test-form').hide();
+  $('.title').hide();
   $('.link-stream').show();
 })
 
@@ -56,7 +57,6 @@ function formSubmit(){
     data: $form.serialize(),
     success: function(response){
       $('#test-form')[0].reset();
-      // alert(url + "?nama=" + namaOrang + "&pesan=" + pesanOrang);
       // return true
     }
   });
